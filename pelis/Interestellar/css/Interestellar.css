@@ -1,0 +1,247 @@
+:root {
+	--rojo: #E50914;
+	--fondo:#F1F1F1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Oswald', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 40px 0 65px;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 85px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #E50914;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal1 {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/marte2.jpeg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal1 .contenedor {
+	position:absolute;
+	margin: 0 auto;
+	margin-top:27.62em;
+	margin-left:6em;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal1 .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal1 .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal1 .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal1 .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal1 .boton i {
+	margin-right: 1.25em;
+}
+
+.pelicula-principal2 {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%),
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal2 .contenedor {
+	position:absolute;
+	margin: 0 auto;
+	margin-top:27.62em;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal2 .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal2 .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal2 .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal2 .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal2 .boton i {
+	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Modo Noche ----- ----- ----- */
+
+body.dark {
+	background: #141414;
+  }
+   
+  .switch {
+	background: #343D5B;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	margin-left: 40%;
+	margin-top: 5%;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	outline: none;
+  }
+  
+  .switch::after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: #F1F1F1;
+	top: 0;
+	left: 0;
+	right: unset;
+	border-radius: 100px;
+	-webkit-transition: .3s ease all;
+	transition: .3s ease all;
+	-webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .switch.active {
+	background: orange;
+	color: #000;
+  }
+  
+  .switch.active::after {
+	right: 0;
+	left: unset;
+  }
+  
+  .switch span {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	background: none;
+	color: #fff;
+  }
+  body.dark h4 {
+	color: #fff;
+  }
+
+  body h4 {
+	color: #ff0000;
+	font-size:32px;
+  }
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
